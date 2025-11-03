@@ -1,72 +1,35 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giới thiệu bản thân - Cuong Nguyen</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuong Nguyen - Trang chủ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <h1 class="logo">Cuong Nguyen</h1>
+      <a href="index.html" class="logo">Cuong Nguyen</a>
       <ul class="nav-links">
-        <li><a href="#home">Trang chủ</a></li>
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#projects">Dự án</a></li>
-        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="projects.html">Dự án</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
       </ul>
       <button id="theme-toggle">🌙</button>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="avatar" class="avatar">
-      <h2>Xin chào, mình là <span>Cuong Nguyen</span></h2>
-      <p>Lập trình viên nhúng & web developer đam mê công nghệ 💻</p>
-      <a href="#projects" class="btn">Xem Dự Án</a>
+  <section class="hero fade-in">
+    <div class="hero-text">
+      <h1>Xin chào, mình là <span>Cuong Nguyen</span></h1>
+      <p>Lập trình viên nhúng & web developer đam mê công nghệ.</p>
+      <a href="projects.html" class="btn">Xem Dự án</a>
     </div>
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" class="avatar">
   </section>
 
-  <section id="about" class="about">
-    <h2>👋 Về tôi</h2>
-    <p>Mình là một kỹ sư lập trình nhúng, yêu thích IoT, ESP32 và AI.  
-    Ngoài ra, mình cũng làm web và ứng dụng thông minh để kết nối công nghệ với con người.</p>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>💡 Dự án nổi bật</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>ESP32 AI Chatbot</h3>
-        <p>Thiết bị ESP32 kết nối API Gemini để trò chuyện bằng giọng nói và văn bản.</p>
-      </div>
-      <div class="project-card">
-        <h3>Robot 4 chân</h3>
-        <p>Robot điều khiển qua Bluetooth sử dụng PCA9685 và ESP32.</p>
-      </div>
-      <div class="project-card">
-        <h3>Website cá nhân</h3>
-        <p>Trang web giới thiệu bản thân với hiệu ứng đẹp, responsive, và chạy trên GitHub Pages.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>📩 Liên hệ</h2>
-    <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Tên của bạn" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Lời nhắn..." required></textarea>
-      <button type="submit">Gửi</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Cuong Nguyen | Made with ❤️</p>
-  </footer>
-
+  <footer>© 2025 Cuong Nguyen | Made with ❤️</footer>
   <script src="script.js"></script>
 </body>
 </html>
